@@ -72,5 +72,13 @@ void placeCursor(HANDLE screen, int row, int col)
 }
 
 /************************************************************
- *                      placeCursor                         *
+ *                      displayData                         *
  ************************************************************/
+ void displayData(HANDLE screen, userInfo input)
+{
+    placeCursor(screen, 10, 0);
+    cout << "Here is the data you entered.\n";
+    cout << "Name  : " << input.name   << endl;
+    cout << "Age:  : " << input.age    << endl;
+    cout << "Gender: " << input.gender << endl;
+}
