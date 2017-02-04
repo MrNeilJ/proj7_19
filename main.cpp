@@ -61,3 +61,16 @@ void placeCursor(HANDLE screen, int row, int col)
 /************************************************************
  *                      getUserInput                        *
  ************************************************************/
+ void getUserInput(HANDLE scree, userInfo &input)
+{
+    placeCursor(screen, 5, 31);
+    getline(cin, input.name);
+    placeCursor(screen, 7, 30);
+    cin >> input.age;
+    placeCursor(screen, 7, 55);
+    cin >> input.gender;
+}
+
+/************************************************************
+ *                      placeCursor                         *
+ ************************************************************/
