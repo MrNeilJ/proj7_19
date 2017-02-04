@@ -48,3 +48,16 @@ void placeCursor(HANDLE screen, int row, int col)
 /************************************************************
  *                      displayPrompts                      *
  ************************************************************/
+ void displayPrompts(HANDLE screen)
+{
+    placeCursor(screen, 3, 25);
+    cout << "******* Data Entry Form *******" << endl;
+    placeCursor(screen, 5, 25);
+    cout << "Name:  " << endl;
+    placeCursor(screen, 7, 25);
+    cout << "Age:             Gender (M/F): " << endl;
+}
+
+/************************************************************
+ *                      getUserInput                        *
+ ************************************************************/
